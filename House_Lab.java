@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Lab 03 Assignment - Draw a house by @AdamGordon
  */
 package house_lab;
 
@@ -10,10 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.Group;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.ArcType;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.Line;
 
 public class House_Lab extends Application{
     //method created to draw 10 stairs from the floor level of the house to the grasss
