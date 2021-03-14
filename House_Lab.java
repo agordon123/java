@@ -1,5 +1,7 @@
 /*
- Lab 03 Assignment - Draw a house by @AdamGordon
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package house_lab;
 
@@ -8,8 +10,10 @@ import javafx.scene.Scene;
 import javafx.scene.Group;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.ArcType;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Circle;
 
 public class House_Lab extends Application{
     //method created to draw 10 stairs from the floor level of the house to the grasss
@@ -67,6 +71,16 @@ public class House_Lab extends Application{
             windows[i].setFill(Color.BLACK);
             group.getChildren().add(windows[i]); 
             }
+        }
+    }
+    //method to make the circles on top of the columns, taking in the group and x/y coordinate of the center of the circle
+    public static void draw2Circles(Group group,double g,double h){
+        int size = 2;
+        Circle[] circle = new Circle[size];
+        for (int i = 0; i < size; i++) {
+            circle[i] = new Circle(g+(i*55),h,20.0,Color.WHITE);
+            circle[i].setStroke(Color.BLACK);
+            group.getChildren().add(circle[i]);
         }
     }
     public static void main(String[] args) {
@@ -222,6 +236,17 @@ public class House_Lab extends Application{
    topWindow.setFill(Color.GREY);
    topWindow.setStroke(Color.BLACK);
    gp1.getChildren().add(topWindow);
+   
+   // add circles on top of the columns using created method, changing g(x coordinate for each column)
+   double g = 108;
+   double h = 250;
+   draw2Circles(gp1,g,h);
+   g = 283;
+   draw2Circles(gp1,g,h);
+   g = 558;
+   draw2Circles(gp1,g,h);
+   g = 733;
+   draw2Circles(gp1,g,h);
     
    // showing off my beautiful hard worked on JAVA FX Mansion 
    stage.setScene(scene);
