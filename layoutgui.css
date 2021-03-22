@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:darkgray;
+}
+Button{
+    -fx-background-color:#white;
+}
+TxtBox{
+    -fx-background-color:white;
+}
