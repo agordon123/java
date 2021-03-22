@@ -1,12 +1,12 @@
-/*
- * Empty Stylesheet file.
- */
 
 .mainFxmlClass {
-    -fx-background-color:darkgray;
+    -fx-background-color:#1d1d1d;
 }
 Button{
-    -fx-background-color:#white;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;
 }
 TxtBox{
     -fx-background-color:white;

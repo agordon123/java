@@ -15,20 +15,20 @@
    <children>
       <Pane fx:id="clearBox" layoutX="2.0" layoutY="2.0" prefHeight="322.0" prefWidth="377.0">
          <children>
-            <Button fx:id="B4" layoutX="55.0" layoutY="144.0" mnemonicParsing="false" onAction="#addDigit" text="4" />
-            <Button fx:id="B5" layoutX="131.0" layoutY="144.0" mnemonicParsing="false" onAction="#addDigit" text="5" />
-            <Button fx:id="B6" layoutX="202.0" layoutY="144.0" mnemonicParsing="false" onAction="#addDigit" text="6" />
-            <Button fx:id="B7" layoutX="55.0" layoutY="191.0" mnemonicParsing="false" onAction="#addDigit" text="7" />
-            <Button fx:id="B8" layoutX="131.0" layoutY="191.0" mnemonicParsing="false" onAction="#addDigit" text="8" />
-            <Button fx:id="B9" layoutX="202.0" layoutY="191.0" mnemonicParsing="false" onAction="#addDigit" text="9" />
-            <Button fx:id="B2" layoutX="132.0" layoutY="96.0" mnemonicParsing="false" onAction="#addDigit" text="2" />
-            <Button fx:id="B3" layoutX="203.0" layoutY="96.0" mnemonicParsing="false" onAction="#addDigit" text="3" />
-            <Button fx:id="EQUALS" layoutX="57.0" layoutY="276.0" mnemonicParsing="false" onAction="#processResult" prefHeight="32.0" prefWidth="205.0" text="=" textFill="#c91919">
+            <Button fx:id="B4" layoutX="55.0" layoutY="133.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="4" textAlignment="CENTER" />
+            <Button fx:id="B5" layoutX="133.0" layoutY="133.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="5" textAlignment="CENTER" />
+            <Button fx:id="B6" layoutX="202.0" layoutY="133.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="6" textAlignment="CENTER" />
+            <Button fx:id="B7" layoutX="55.0" layoutY="180.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="7" textAlignment="CENTER" />
+            <Button fx:id="B8" layoutX="131.0" layoutY="180.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="8" textAlignment="CENTER" />
+            <Button fx:id="B9" layoutX="202.0" layoutY="180.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="9" textAlignment="CENTER" />
+            <Button fx:id="B2" layoutX="131.0" layoutY="86.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="2" textAlignment="CENTER" />
+            <Button fx:id="B3" layoutX="202.0" layoutY="86.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="3" textAlignment="CENTER" />
+            <Button fx:id="EQUALS" layoutX="57.0" layoutY="276.0" mnemonicParsing="false" onAction="#processResult" prefHeight="32.0" prefWidth="205.0" styleClass="Button" text="=" textFill="#e4dbdb">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="ADD" layoutX="271.0" layoutY="96.0" mnemonicParsing="false" onAction="#arrthOp" text="+">
+            <Button fx:id="ADD" layoutX="270.0" layoutY="86.0" minWidth="53.0" mnemonicParsing="false" onAction="#arrthOp" prefHeight="36.0" prefWidth="53.0" text="+" textAlignment="CENTER" textFill="WHITE">
                <effect>
                   <Blend />
                </effect>
@@ -36,20 +36,23 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="MULTIPY" layoutX="271.0" layoutY="231.0" mnemonicParsing="false" onAction="#arrthOp" text="X" />
-            <Button fx:id="B0" layoutX="132.0" layoutY="231.0" mnemonicParsing="false" text="0" />
-            <Button fx:id="B1" layoutX="55.0" layoutY="96.0" mnemonicParsing="false" onAction="#addDigit" text="1" />
-            <TextField fx:id="txtBox" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="29.0" prefHeight="42.0" prefWidth="307.0" styleClass="mainFxmlClass">
-               <font>
-                  <Font name="Bell MT Bold" size="30.0" />
-               </font></TextField>
-            <Button fx:id="DIVISION" layoutX="271.0" layoutY="191.0" mnemonicParsing="false" onAction="#arrthOp" text="/" />
-            <Button fx:id="MINUS" layoutX="271.0" layoutY="144.0" mnemonicParsing="false" text="-">
+            <Button fx:id="MULTIPY" layoutX="271.0" layoutY="225.0" minWidth="53.0" mnemonicParsing="false" onAction="#arrthOp" prefHeight="36.0" prefWidth="53.0" styleClass="Button" text="X" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="B0" layoutX="131.0" layoutY="231.0" mnemonicParsing="false" styleClass="Button" text="0" />
+            <Button fx:id="B1" layoutX="55.0" layoutY="86.0" mnemonicParsing="false" onAction="#addDigit" styleClass="Button" text="1" textAlignment="CENTER" />
+            <Button fx:id="MINUS" layoutX="271.0" layoutY="133.0" minWidth="53.0" mnemonicParsing="false" onAction="#arrthOp" prefHeight="36.0" prefWidth="53.0" styleClass="Button" text="-" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="CLEAR" layoutX="270.0" layoutY="276.0" mnemonicParsing="false" onAction="#clearText" text="C" textFill="#bc1919" />
+            <TextField fx:id="txtBox" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="18.0" prefHeight="43.0" prefWidth="307.0" style="-fx-border-color: white;" styleClass="TextBox">
+               <font>
+                  <Font name="Garamond Bold" size="30.0" />
+               </font></TextField>
+            <Button fx:id="DIVISION" layoutX="271.0" layoutY="179.0" minWidth="53.0" mnemonicParsing="false" onAction="#arrthOp" prefHeight="36.0" prefWidth="53.0" styleClass="Button" text="/" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="CLEAR" layoutX="270.0" layoutY="276.0" minWidth="53.0" mnemonicParsing="false" onAction="#clearText" prefHeight="32.0" prefWidth="53.0" styleClass="Button" text="C" textFill="WHITE" />
          </children>
       </Pane>
    </children>
